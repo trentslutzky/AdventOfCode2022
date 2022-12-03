@@ -13,9 +13,9 @@ import (
 // Z
 
 var score_matrix = [3][3]int{
-  {4, 1, 7} ,
-  {8, 5, 2} ,
-  {3, 9, 6} ,
+  {3, 1, 2} ,// lose/scissors    lose/rock      lose/paper
+  {4, 5, 6} ,// draw/rock        draw/paper     draw/scissors
+  {8, 9, 7} ,// win/paper        win/scissors   win/rock
 }
 
 func move_to_index(move string) int {
